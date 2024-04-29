@@ -63,10 +63,11 @@ footer {
 .subscribe-button {
     
     padding: 10px 20px 10px 20px; 
-    background-color: #007bff;
+    background-color: #523076;
     color: white; 
     text-decoration: none; 
     border-radius: 5px; 
+    font-family: 'Playfair Display', serif; 
 }
 
 .subscribe-button:hover {
