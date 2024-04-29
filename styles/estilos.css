@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif; 
+}
+
+header p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight:300;
+    color: gray;
+}
+
+#Nombre{
+    color:cadetblue;
+    font-weight: 700;
+}
+
+main p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+body {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+header {
+    margin-bottom: 20px; 
+}
+
+
+p {
+    margin-bottom: 15px; 
+}
+
+
+footer {
+    margin-top: 20px; 
+    text-align: center; 
+}
+
+.logo-container {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.logo {
+    margin-right: 20px; 
+}
+
+.subscribe-button {
+    
+    padding: 10px 20px 10px 20px; 
+    background-color: #523076;
+    color: white; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-family: 'Playfair Display', serif; 
+}
+
+.subscribe-button:hover {
+    background-color: #0056b3; 
+}
+
+.copyright-container{
+    padding: 20px 20px 10px 20px; 
+}
+
+
+.link {
+    padding: 20px 10px 20px 10px;
+    border-radius: 5px;
+    border-style:solid ;
+    border-color: violet;
+    border-width: 2px;
+    text-align: center; 
+}
+
+.link a {
+    text-decoration: none; 
+    color: violet;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    
+}
+
+
