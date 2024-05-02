@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+* {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* Prumo, Georgia, "serif"; */
+}
+=======
 @font-face {
     font-family: 'Playfair Display';
     src: url('fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
@@ -97,3 +103,4 @@ footer {
 }
 
 
+>>>>>>> 7989afbe61a5754a5af0ce459130c541b4b2fb35
