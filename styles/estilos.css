@@ -95,63 +95,38 @@ footer {
     font-size: small;
     
 }
-@media (min-width: 1024px) {
-    
-    nav ul li{
-        display: flex;
-    }
-}
 
-
-/* Media query para dispositivos con ancho de pantalla de 620px o menos */
-@media (max-width: 620px) {
-    /* Ocultar la lista de navegación */
-    nav ul {
-        display: none;
-    }
-
-    
-    .menu-icon {
-        display: block;
-    }
-}
-
-/* Media query para dispositivos con un ancho de pantalla de al menos 1024px */
-
-
-
-/* Estilos por defecto */
-nav {
+.header-content {
     display: flex;
-    align-items: center;
+    align-items: center; /* Alinear verticalmente */
+}
+
+nav {
+    margin-left: 20px; /* Espacio entre el logo y el menú */
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: none; /* Ocultar la lista por defecto */
-    flex-direction: column;
+    display: flex; /* Mostrar la lista como una fila */
 }
 
 nav ul li {
-    margin-bottom: 10px;
+    margin-right: 10px; /* Espacio entre elementos */
 }
 
 nav ul li:last-child {
-    margin-bottom: 0;
+    margin-right: 0; /* Eliminar el margen derecho del último elemento */
 }
 
 nav ul li a {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: black;
-    display: block;
 }
 
 nav ul li a:hover {
     color: blue;
 }
-
-
 
