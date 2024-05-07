@@ -3,6 +3,8 @@
     src: url('fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
 }
 
+
+                                            /* Estilos generales */
 h1, h2 {
     font-family: 'Playfair Display', serif; 
 }
@@ -99,13 +101,13 @@ footer {
     
 }
 
-/* Estilos para el encabezado */
+
 header {
     display: flex;
     flex-direction: column; 
 }
 
-                    /* Estilos para el contenedor del logo, menú y botón de suscripción */
+                                    /* Estilos para el contenedor del logo, menú y botón de suscripción */
 .logo-container {
     display: flex; 
     align-items: center; 
@@ -117,8 +119,6 @@ header {
 }
 
 /* Estilos para el menú de navegación */
-
-
 .menu {
     list-style: none;
     padding: 0;
@@ -144,12 +144,61 @@ header {
 
 /* Estilos para el botón de suscripción */
 .subscribe-container {
+    display: flex;
     margin-left: 140px; 
 }
 
 /* Estilos para el contenido del encabezado */
 .header-content {
     margin-top: 20px; 
+}
+
+
+/* Media query para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    /* Ajustes para dispositivos móviles */
+    header {
+        text-align: center; /* Centra el contenido del encabezado */
+    }
+    
+    .logo-container {
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+        
+    }
+
+    .logo-content{
+        margin-left: 150px;
+    }
+
+    nav {
+        margin-top: 10px; /* Agrega espacio entre el logo y el menú */
+    }
+
+    .subscribe-container {
+        display: flex;
+        justify-content: center; /* Centra el contenido horizontalmente */
+        align-items: center; /* Centra el contenido verticalmente */
+        margin-top: 20px; 
+        margin-right: 100px;
+    }
+
+    .menu li a {
+        font-size: small; /* Reducir el tamaño de la fuente del menú */
+    }
+
+    .subscribe-button {
+        font-size: small; /* Reducir el tamaño de la fuente del botón de suscripción */
+        padding: 8px 16px; /* Reducir el relleno del botón de suscripción */
+        border: none;
+        margin: 0px;
+        
+        
+    }
+
+    main article {
+        text-align: justify; /* Ajusta el texto del artículo */
+    }
 }
 
 
