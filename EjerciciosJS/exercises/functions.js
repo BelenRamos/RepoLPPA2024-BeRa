@@ -3,7 +3,7 @@ console.log("6. Funciones");
 Ejecutar la función y guardar el resultado en una variable, mostrando el valor de
 dicha variable en la consola del navegador. */
 
-function suma(a, b) {
+function sum(a, b) {
     return a + b;
 }
 
@@ -62,10 +62,10 @@ function pedirNumero(mensaje) {
 }
 
 // Llamar a la función sumaConValidacion con números ingresados por el usuario
-var numero1 = pedirNumero("Ingrese el primer número:");
-var numero2 = pedirNumero("Ingrese el segundo número:");
+var num1 = pedirNumero("Ingrese el primer número:");
+var num2 = pedirNumero("Ingrese el segundo número:");
 
-var resultado = sumaConValidacion(numero1, numero2);
+var resultado = sumaConValidacion(num1, num2);
 console.log("El resultado de la suma es:", resultado);
 
 
