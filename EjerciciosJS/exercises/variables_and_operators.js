@@ -1,4 +1,5 @@
-// Variables y Operadores
+console.log("1. Variables y operadores");
+
 // a. Crear dos variables numéricas y utilizar el operador suma para guardar el valor de la suma de ambos números en una 3er variable.
 
 let numero1 = 5;
@@ -26,3 +27,6 @@ let string4 = " Desarrollo y Arquitecturas WEB";
 let longitudTotal = string3.length + string4.length;
 
 console.log("La suma de las longitudes de los strings es:", longitudTotal);
+
+
+console.log("---------------------------------------");
