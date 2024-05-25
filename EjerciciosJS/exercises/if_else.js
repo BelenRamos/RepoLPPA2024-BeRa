@@ -6,6 +6,8 @@ valor es mayor o igual que 0,5 mostrar una alerta con el mensaje “Greater than
 
 var randomNumber = Math.random(); // Genera un número aleatorio entre 0 y 1
 
+console.log(randomNumber);
+
 if (randomNumber >= 0.5) {
     alert("Greater than 0.5");
 } else {
@@ -23,6 +25,8 @@ vi. “Adulto mayor” entre 61 y 75 años;
 vii. “Anciano” si es mayor a 75 años. */
 
 var age = Math.floor(Math.random() * 101); // Genera un número entero aleatorio entre 0 y 100
+
+console.log(age);
 
 if (age < 2) {
     alert("Bebe");
