@@ -21,3 +21,19 @@ input.is-invalid + .invalid-feedback {
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Aumenta la sombra cuando se pasa el mouse */
 }
 
+button[type="submit"] {
+    margin-top: 20px; /* Añade margen superior al botón */
+    padding: 10px 20px; /* Aumenta el relleno del botón */
+    font-size: 1.2em; /* Aumenta el tamaño de la fuente del botón */
+    background-color: #007bff; /* Color de fondo del botón */
+    border: none; /* Elimina el borde del botón */
+    color: white; /* Color del texto del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Añade una transición suave al color de fondo */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Cambia el color de fondo cuando se pasa el mouse sobre el botón */
+}
+
+
