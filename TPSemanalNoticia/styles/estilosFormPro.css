@@ -1,0 +1,7 @@
+.invalid-feedback {
+    display: none;
+}
+
+input.is-invalid + .invalid-feedback {
+    display: block;
+}
