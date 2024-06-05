@@ -7,33 +7,33 @@ input.is-invalid + .invalid-feedback {
 }
 
 #form-title {
-    margin-top: 32px; /* Alinea el título con el campo de entrada */
-    font-size: 2.5em; /* Aumenta el tamaño de la fuente */
-    color: #007bff; /* Cambia el color a azul (puedes cambiarlo por el color que prefieras) */
-    font-weight: bold; /* Hace el texto en negrita */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Añade una sombra al texto */
-    font-family: 'Arial', sans-serif; /* Cambia la fuente (puedes usar otra fuente que prefieras) */
-    transition: all 0.3s ease; /* Añade una transición suave para los cambios */
+    margin-top: 32px; 
+    font-size: 2.5em; 
+    color:lightpink; 
+    font-weight: bold; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+    font-family: 'Arial', sans-serif; 
+    transition: all 0.3s ease; 
 }
 
 #form-title:hover {
-    color: #0056b3; /* Cambia el color cuando se pasa el mouse sobre el título */
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Aumenta la sombra cuando se pasa el mouse */
+    color:deeppink;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 button[type="submit"] {
-    margin-top: 20px; /* Añade margen superior al botón */
-    padding: 10px 20px; /* Aumenta el relleno del botón */
-    font-size: 1.2em; /* Aumenta el tamaño de la fuente del botón */
-    background-color: #007bff; /* Color de fondo del botón */
-    border: none; /* Elimina el borde del botón */
-    color: white; /* Color del texto del botón */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    transition: background-color 0.3s ease; /* Añade una transición suave al color de fondo */
+    margin-top: 20px;
+    padding: 10px 20px; 
+    font-size: 1.2em;
+    background-color: #007bff; 
+    border: none; 
+    color: white; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
 }
 
 button[type="submit"]:hover {
-    background-color: #0056b3; /* Cambia el color de fondo cuando se pasa el mouse sobre el botón */
+    background-color:darkviolet; 
 }
 
 

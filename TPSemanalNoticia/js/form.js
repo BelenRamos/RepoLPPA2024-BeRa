@@ -1,25 +1,26 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('subscription-form');
-    const title = document.getElementById('form-title');
-    const fullNameField = document.getElementById('fullName');
+document.addEventListener('DOMContentLoaded', function() {
+    var form = document.getElementById('subscription-form');
+    var title = document.getElementById('form-title');
+    var fullNameField = document.getElementById('fullName');
 
-    fullNameField.addEventListener('input', () => {
-        title.textContent = `HOLA ${fullNameField.value.toUpperCase()}`;
+    fullNameField.addEventListener('input', function() {
+        title.textContent = 'HOLA ' + fullNameField.value.toUpperCase();
     });
 
-    form.addEventListener('blur', (event) => {
+    form.addEventListener('blur', function(event) {
         validateField(event.target);
     }, true);
 
-    form.addEventListener('focus', (event) => {
+    form.addEventListener('focus', function(event) {
         clearValidation(event.target);
     }, true);
 
-    form.addEventListener('submit', (event) => {
+    form.addEventListener('submit', function(event) {
         event.preventDefault();
-        const fields = form.elements;
-        let isValid = true;
-        for (let field of fields) {
+        var fields = form.elements;
+        var isValid = true;
+        for (var i = 0; i < fields.length; i++) {
+            var field = fields[i];
             if (!validateField(field)) {
                 isValid = false;
             }
@@ -33,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function validateField(field) {
-    let error = '';
+    var error = '';
     switch (field.name) {
         case 'fullName':
             if (!/.{6,}/.test(field.value) || !/\s/.test(field.value)) {
@@ -51,7 +52,7 @@ function validateField(field) {
             }
             break;
         case 'confirmPassword':
-            const password = document.getElementById('password').value;
+            var password = document.getElementById('password').value;
             if (field.value !== password) {
                 error = 'Las contraseñas no coinciden.';
             }
@@ -108,3 +109,4 @@ function clearValidation(field) {
 function showAlert(message) {
     alert(message);
 }
+
