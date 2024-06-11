@@ -131,13 +131,13 @@ function showModal(isSuccess, data) {
     modal.innerHTML = '';
 
     const message = isSuccess
-        ? `La suscripción al newsletter fue exitosa. Datos recibidos: ${JSON.stringify(data)}`
+        ? `La suscripción al newsletter fue exitosa.`
         : `Error: ${data.message || 'Error desconocido'}`;
 
     modal.innerHTML = `
         <div class="modal-content">
             <span class="close">&times;</span>
-            <p>${message}</p>
+            <p class="modal-message">${message}</p>
         </div>
     `;
 
@@ -155,7 +155,15 @@ function showModal(isSuccess, data) {
             modal.style.display = 'none';
         }
     });
-}});
+
+    // Agregar un temporizador para cerrar automáticamente el modal después de unos segundos
+    setTimeout(() => {
+        modal.style.display = 'none';
+    }, 3000); // Cerrar el modal después de 3 segundos
+}
+
+
+});
 
 window.addEventListener('load', () => {
     const savedData = localStorage.getItem('formData');
