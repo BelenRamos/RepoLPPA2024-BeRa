@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        // Temporizador para cerrar automáticamente el modal 
+        //Temporizador para cerrar automáticamente el modal 
         setTimeout(() => {
             modal.style.display = 'none';
         }, 5000); 
@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (savedData) {
             const data = JSON.parse(savedData);
             
-            // Cargar los datos en el formulario
+            //Cargar los datos en el formulario
             form.fullName.value = data.fullName || '';
             form.email.value = data.email || '';
             form.password.value = data.password || '';
