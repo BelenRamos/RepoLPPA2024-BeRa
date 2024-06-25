@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP - API REST</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Buscador de Rick y Morty</h1>
+        <div class="filters">
+            <input type="text" id="name" placeholder="Nombre (e.g., Rick, Morty)">
+            <select id="status">
+                <option value="">Estado</option>
+                <option value="alive">Alive</option>
+                <option value="dead">Dead</option>
+                <option value="unknown">Unknown</option>
+            </select>
+            <input type="text" id="species" placeholder="Especie (e.g., Human, Alien)">
+            <input type="text" id="type" placeholder="Tipo (e.g., Clone, Cyborg)">
+            <select id="gender">
+                <option value="">Género</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="genderless">Genderless</option>
+                <option value="unknown">Unknown</option>
+            </select>
+            <button id="filterButton">Filtrar personajes</button>
+        </div>
+        <button id="fetchAllButton">Obtener todos los personajes</button>
+        <div class="characters" id="characters"></div>
+        <div id="error" class="error"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
