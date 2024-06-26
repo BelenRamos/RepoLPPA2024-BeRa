@@ -3,16 +3,7 @@ document.getElementById('filterButton').addEventListener('click', filterCharacte
 
 function fetchAllCharacters() {
     var url = 'https://rickandmortyapi.com/api/character';
-    fetch(url)
-        .then(function(response) {
-            return response.json();
-        })
-        .then(function(data) {
-            displayCharacters(data.results);
-        })
-        .catch(function(error) {
-            displayError(error);
-        });
+    fetchCharacters(url);
 }
 
 function filterCharacters() {
@@ -30,12 +21,23 @@ function filterCharacters() {
         }
     });
 
+    fetchCharacters(url);
+}
+
+function fetchCharacters(url) {
     fetch(url)
         .then(function(response) {
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
+            }
             return response.json();
         })
         .then(function(data) {
             displayCharacters(data.results);
+            // Manejar la paginación si hay más páginas
+            if (data.info.next) {
+                fetchCharacters(data.info.next);
+            }
         })
         .catch(function(error) {
             displayError(error);
@@ -44,11 +46,11 @@ function filterCharacters() {
 
 function displayCharacters(characters) {
     var charactersDiv = document.getElementById('characters');
+    var errorDiv = document.getElementById('error');
     charactersDiv.innerHTML = '';
+    errorDiv.textContent = '';
 
-    // Verificar si characters es undefined o null
-    if (!characters) {
-        var errorDiv = document.getElementById('error');
+    if (!characters || characters.length === 0) {
         errorDiv.textContent = 'No se encontraron personajes.';
         return;
     }

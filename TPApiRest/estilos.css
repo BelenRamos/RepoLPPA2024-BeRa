@@ -99,4 +99,5 @@ button#fetchAllButton:hover {
 .error {
     color: red;
     margin-top: 20px;
+    font-weight: bold;
 }
