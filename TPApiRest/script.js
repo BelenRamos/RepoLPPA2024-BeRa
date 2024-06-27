@@ -39,6 +39,7 @@ function fetchCharacters(url) {
         })
         .then(function(data) {
             displayCharacters(data.results);
+            document.getElementById('count').textContent = `Personajes encontrados: ${data.info.count}`;
             prevPageUrl = data.info.prev;
             nextPageUrl = data.info.next;
 
@@ -80,3 +81,4 @@ function displayError(error) {
     var errorDiv = document.getElementById('error');
     errorDiv.textContent = 'Error: ' + error.message;
 }
+

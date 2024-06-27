@@ -122,3 +122,9 @@ button#fetchAllButton:hover {
     background-color: #218838;
 }
 
+.count {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
