@@ -99,5 +99,26 @@ button#fetchAllButton:hover {
 .error {
     color: red;
     margin-top: 20px;
-    font-weight: bold;
 }
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #7fcfad;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+    background-color: #218838;
+}
+

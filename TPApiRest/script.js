@@ -1,5 +1,10 @@
 document.getElementById('fetchAllButton').addEventListener('click', fetchAllCharacters);
 document.getElementById('filterButton').addEventListener('click', filterCharacters);
+document.getElementById('prevPageButton').addEventListener('click', () => fetchCharacters(prevPageUrl));
+document.getElementById('nextPageButton').addEventListener('click', () => fetchCharacters(nextPageUrl));
+
+let prevPageUrl = null;
+let nextPageUrl = null;
 
 function fetchAllCharacters() {
     var url = 'https://rickandmortyapi.com/api/character';
@@ -34,10 +39,12 @@ function fetchCharacters(url) {
         })
         .then(function(data) {
             displayCharacters(data.results);
-            // Manejar la paginación si hay más páginas
-            if (data.info.next) {
-                fetchCharacters(data.info.next);
-            }
+            prevPageUrl = data.info.prev;
+            nextPageUrl = data.info.next;
+
+            // Mostrar u ocultar botones de paginación según corresponda
+            document.getElementById('prevPageButton').style.display = prevPageUrl ? 'inline' : 'none';
+            document.getElementById('nextPageButton').style.display = nextPageUrl ? 'inline' : 'none';
         })
         .catch(function(error) {
             displayError(error);
